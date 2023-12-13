@@ -7,13 +7,7 @@ app = Flask(__name__)
 dash_app = dash.Dash(__name__, server=app)
 
 # Sample DataFrame
-data = {
-    'coverage and premium': ["Total coverage: $5 million\nTotal Annual Premium: $765.00"] * 20,
-    'Insurance Type': ['Home'] * 20,
-    'Category': ['Dwelling Building Coverage', 'Dwelling Building Coverage', 'Dwelling Building Coverage', 'Dwelling Building Coverage', 'Dwelling Building Coverage', 'Personal Property Coverage', 'Personal Property Coverage', 'Personal Property Coverage', 'Personal Property Coverage', 'Personal Property Coverage', 'Living Expenses and Rental Value', 'Living Expenses and Rental Value', 'Living Expenses and Rental Value', 'Living Expenses and Rental Value', 'Living Expenses and Rental Value', 'Liability Coverage', 'Liability Coverage', 'Voluntary Medical Coverage', 'Voluntary Payment for Damage Property', 'Voluntary Compensation for Residence Employees'],
-    'What_covered': ['Primary Dwelling', 'Primary Dwelling', 'Primary Dwelling', 'Primary Dwelling', 'Primary Dwelling', 'Your Belongings', 'Your Belongings', 'Your Belongings', 'Your Belongings', 'Your Belongings', 'Temporary Housing Expenses', 'Living Expenses Reimbursement', 'Fair Rental Value', 'Premises Liability', 'Premises Liability', 'Reimbursement for Injury', 'Reimbursement for Injury', 'Reimbursement for Accidents', 'Property Damage to Others', 'Indemnity for Residence Employees Injury'],
-    'Percentage Covered': [100 for _ in range(20)]
-}
+your data
 
 # Manually provided details for the information window
 total_coverage = "$5 million"
@@ -23,9 +17,9 @@ premium = "$765.00"
 info_text = f"""
 <b>Insurer:</b> TD Insurance<br>
 <b>Benefit Amount:</b> {total_coverage}<br>
-<b>Insured Name:</b> AMIN NANJI AND ASHIFA NANJI<br>
-<b>Policy Number:</b> 00117251217<br>
-<b>Renewal Date:</b> March 10, 2023<br>
+<b>Insured Name:</b> name<br>
+<b>Policy Number:</b> policy number<br>
+<b>Renewal Date:</b> date<br>
 <b>Premium:</b> {premium}<br>
 """
 
