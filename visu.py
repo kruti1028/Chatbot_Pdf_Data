@@ -104,5 +104,13 @@ def generate_sunburst_chart_from_db(db_path):
     chart_html = fig.to_html(full_html=False, include_plotlyjs='cdn', default_height=600, default_width=800)
     return chart_html
 
+# Flask route to display the page with the chart
+@app.route('/')
+def index():
+    db_path = 'path_to_your_database.db'  # Path to your SQLite database
+    chart_html = generate_sunburst_chart_from_db(db_path)
+    return render_template('index.html', chart_html=chart_html)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
