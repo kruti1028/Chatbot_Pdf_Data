@@ -2,6 +2,8 @@ from flask import Flask, render_template
 import sqlite3
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+from IPython.display import HTML
+
 
 app = Flask(__name__)
 
@@ -109,7 +111,7 @@ def generate_sunburst_chart_from_db(db_path):
 def index():
     db_path = 'path_to_your_database.db'  # Path to your SQLite database
     chart_html = generate_sunburst_chart_from_db(db_path)
-    return render_template('index.html', chart_html=chart_html)
+    return render_template('index.html', chart_html=chart_html)#display(HTML(chart_html))
 
 
 if __name__ == '__main__':
