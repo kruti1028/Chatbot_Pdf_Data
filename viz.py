@@ -9,13 +9,12 @@ import re  # For regular expressions
 from typing import List, Dict, Optional
 
 app = Flask(__name__)
-UPLOAD_FOLDER = '/Users/sanketdhameliya/Documents'
+UPLOAD_FOLDER = 
 ALLOWED_EXTENSIONS = {'pdf'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 app.secret_key = 'your_secret_key'
-openai.api_key = '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'
-
+openai.api_key = 
 
 # Insurance policy information class
 class InsurancePolicyInfo:
